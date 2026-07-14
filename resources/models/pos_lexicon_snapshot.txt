@@ -1,0 +1,200 @@
+a	DT:1692, NNP:30
+ab	NNP:29
+abb	NNP:4
+aberration	NN:2
+abilities	NNS:2
+ability	NN:3
+able	JJ:18
+abloy	NNP:2
+abn	NNP:2
+about	IN:124, RB:29
+above	IN:15
+abp	NNP:10
+abroad	RB:10
+absorption	NN:2
+ac	NNP:11
+acacia	NNP:2
+acceptance	NN:2
+access	NN:19
+accessible	JJ:2
+accessories	NNS:11
+accident	NN:3
+accommodate	VB:2
+accommodation	NN:2
+accomplishing	VBG:2
+accordance	NN:13
+according	VBG:123
+accordingly	RB:2
+account	NN:6, VBP:2
+accountant	NNP:2
+accounted	VBD:11
+accounting	NN:9, VBG:2
+accounts	NNS:7, VBZ:3
+accumulate	NN:2
+achieve	VB:7
+achieved	VBD:2, VBN:3
+achievement	NN:2
+achieving	VBG:2
+acid	NN:3
+acknowledged	VBD:2, VBN:2
+acquire	VB:25
+acquired	VBD:17, VBN:18
+acquirer	NN:2
+acquires	NNS:2, VBZ:3
+acquiring	VBG:13
+acquisition	NN:66
+acquisitions	NNS:15
+acquitted	VBN:2
+across	IN:13
+act	NNP:8, VB:2
+acted	VBD:2
+acting	VBG:4
+action	NN:8
+actions	NNS:5
+activate	VB:2
+activating	VBG:3
+activation	NN:2
+active	JJ:9
+actively	RB:4
+activeness	NN:2
+activision	NNP:2
+activities	NNS:25
+activity	NN:13
+actors	NNS:3
+actual	JJ:14
+actually	RB:3
+adac	NNP:2
+adams	NNP:2
+adaptation	NN:3
+adapter	NN:2
+add	VB:6
+added	VBD:32, VBN:3
+addiction	NN:2
+adding	VBG:4
+addition	NN:40
+additional	JJ:15, NNP:2
+additionally	RB:5
+address	NN:5, VB:3
+adds	VBZ:6
+adequacy	NN:3
+adequate	JJ:2
+adidas	NNS:2
+adjust	VB:2
+adjustable	JJ:2
+adjusted	VBN:2
+adjusting	VBG:3
+adjustment	NN:5
+adjustments	NNS:6
+administered	VBN:3
+administration	NN:16, NNP:5
+administrative	JJ:2
+administrators	NNS:3
+admired	VBN:2
+adopted	VBN:2
+adopters	NNS:2
+adopting	VBG:3
+adoption	NN:2
+adp	NNP:28
+adpnews	NNP:12
+adult	NN:2
+advance	NN:2
+advanced	JJ:8, VBD:2
+advantage	NN:5
+advantages	NNS:2
+advertisements	NNS:3
+advertiser	NN:2
+advertisers	NNS:2
+advertising	NN:7
+advise	VB:2
+advised	VBN:2
+advisors	NNS:2
+advisory	NN:4
+affairs	NNPS:2, NNS:2
+affarsvarlden	NNP:3
+affect	VB:6
+affected	VBN:6
+affecting	VBG:2
+affecto	NNP:13
+affectogenimap	NNP:3
+affordable	JJ:2
+aforementioned	JJ:2
+africa	NNP:12
+african	JJ:2
+after	IN:84
+afternoon	NN:6
+afx	NNP:27
+ag	NNP:11
+again	RB:12
+against	IN:11
+age	NN:2
+agency	NN:5
+agenda	NN:4
+agent	NN:2
+agents	NNS:3
+aggregate	JJ:2, NN:2
+aggregator	NN:2
+aggressively	RB:2
+agitators	NNS:2
+agm	NNP:3
+ago	RB:24
+agreed	VBD:8, VBN:28
+agreeing	VBG:2
+agreement	NN:106
+agreements	NNS:19
+agricultural	JJ:6
+agro	NNP:2
+ahead	RB:5
+ahlstrom	IN:5, NNP:21
+aho	NNP:3
+ailing	VBG:2
+ailments	NNS:2
+aim	NN:22, VBP:4
+aimed	VBN:10
+aiming	VBG:2
+aims	NNS:4, VBZ:15
+air	NN:8
+airbaltic	JJ:3
+airbus	NNP:4
+aircraft	NN:6
+airline	NN:14
+airlines	NNPS:2, NNS:2
+airport	NN:5
+airports	NNS:4
+airspace	NN:2
+aker	NNP:8
+aktia	NNP:10
+alandsbanken	NNP:4
+albat	NNP:2
+albums	NNS:2
+alcohol	NN:2
+aldata	NNP:22
+aleksandri	NNP:2
+alexander	NNP:3
+alexandria	NNP:18
+alfa	NNP:4
+aligned	VBN:2
+alike	RB:2
+all	DT:78, PDT:17
+alliance	NN:3
+allocated	VBN:3
+allocation	NN:3
+allotted	VBN:3
+allow	VB:5, VBP:2
+allowed	VBN:4
+allowing	VBG:2
+allows	VBZ:10
+alloys	NNS:2
+allure	NN:2
+alma	NNP:33
+almost	RB:16
+alone	RB:5
+along	IN:7
+alpina	NNP:2
+alpine	NN:2
+already	RB:38
+also	RB:224
+alternately	RB:2
+alternative	JJ:3, NN:2
+alternatives	NNS:2
+although	IN:4
+altia	NNP:2

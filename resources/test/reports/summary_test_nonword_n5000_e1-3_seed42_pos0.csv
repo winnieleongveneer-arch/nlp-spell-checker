@@ -1,0 +1,2 @@
+test_file,pos_on,precision,recall,f1,top1,top3,top5,mrr,lat_mean,lat_p50,lat_p95,n_sent,gt_errors,matched
+C:\BaiduCloud\BaiduSyncdisk\document\semester2\NLP\assignment\work\A1_Spelling_Check\resources\test\test_nonword_n5000_e1-3_seed42.jsonl,0,0.9973267326732673,0.9989091630305434,0.9981173206500198,0.7360270028789834,0.9062841258810682,0.9466891690658196,0.8236424104040504,0.044181980000296606,0.03956659999676049,0.0945818000473082,5000,10084,10073

@@ -1,0 +1,14 @@
+{
+  "order": 2,
+  "smoothing": "KneserNeyInterpolated",
+  "unk_cutoff": 1,
+  "remove_stopwords": false,
+  "use_lemma": false,
+  "use_pos_lemma": false,
+  "inputs": {
+    "corpus_dir": "../resources/corpus",
+    "corpus_csv": "../resources/corpus/financial/all-data.csv",
+    "text_col": "text"
+  },
+  "notes": "Built for A1 spell correction bigram LM pack."
+}

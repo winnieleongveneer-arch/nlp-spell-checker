@@ -1,0 +1,16 @@
+(?x)
+(?:\b[A-Z]{2,5}\b
+ | \b[A-Z]{1,5}(?:[.-][A-Z]{1,5})?\b
+ | \bQ[1-4]\b
+ | \bFY(?:\d{2}|\d{4})\b
+ | \b(?:USD|EUR|GBP|JPY|CNY|HKD|SGD|AUD|CAD|CHF)\b
+ | \b(?:CPI|PPI|PMI|GDP|EPS|EBIT|EBITDA|FCF|DCF|WACC|VAT)\b
+ | \b(?:IPO|ETF|ADR|MBS|ABS|CDS|CLO|LIBOR|SOFR)\b
+ | \b(?:SEC|FOMC|FASB|GAAP|IFRS)\b
+ | M&A
+ | \b[A-Z][a-z][A-Z]\b
+ | \b(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|
+Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|
+Nov(?:ember)?|Dec(?:ember)?)\b
+
+)

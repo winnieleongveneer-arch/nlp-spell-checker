@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Financial Spell Checker</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="app">
+    <div class="app-title">FINANCIAL SPELL CHECKER</div>
+
+    <div class="top-bar">
+      <button class="pill-btn primary" id="btnUpload">
+        <span class="icon">⬆</span>
+        Upload file
+      </button>
+      <input type="file" id="fileInput" accept=".txt,.text" hidden />
+
+      <button class="pill-btn primary" id="btnSaveText">
+        <span class="icon">💾</span>
+        Save text
+      </button>
+
+      <button class="pill-btn primary" id="btnSetting">
+        <span class="icon">⚙</span>
+        Setting
+      </button>
+    </div>
+
+    <!-- main grid (2 columns default, 3 columns when SETTINGS.show_vocab_panel=true) -->
+    <div class="main-grid" id="mainGrid">
+      <div class="panel editor-panel">
+        <div class="panel-title">Text Editor (User Input Area)</div>
+
+        <div class="editor-wrap">
+          <div id="editor"
+               class="editor"
+               contenteditable="true"
+               spellcheck="false"
+               data-placeholder="Type your text here (max 500 characters)..."></div>
+        </div>
+
+        <div class="error-badge" id="errorBadge">
+          <div class="error-badge-title">Error List</div>
+          <ul id="errorList"></ul>
+        </div>
+
+        <div id="charCounter" class="char-counter">0/500</div>
+      </div>
+
+      <div class="panel suggestion-panel">
+        <div class="panel-title">Suggestions (for selected word)</div>
+
+        <div class="suggestion-box">
+          <div class="suggestion-word">
+            <span class="label">Word:</span>
+            <span id="selectedWord">-</span>
+          </div>
+
+          <div class="suggestion-type">
+            <span class="label">Type:</span>
+            <span id="selectedErrType" class="err-type">-</span>
+          </div>
+
+          <div class="ranked-title">Ranked Candidates:</div>
+          <ol id="candidateList" class="candidate-list"></ol>
+
+          <div class="suggestion-actions">
+            <button class="pill-btn accent" id="btnReplace" disabled>Replace</button>
+            <button class="pill-btn ghost" id="btnIgnore" disabled>Ignore</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vocabulary panel (hidden by default; shown when Settings -> Show Vocabulary Panel enabled) -->
+      <div class="panel vocab-panel hidden" id="vocabPanel">
+        <div class="panel-title">Corpus Dictionary</div>
+
+        <input id="vocabSearch" class="vocab-search" type="text" placeholder="Search..." />
+
+        <div class="vocab-meta">
+          <span id="vocabCount">0 words</span>
+        </div>
+
+        <div id="vocabList" class="vocab-list"></div>
+      </div>
+    </div>
+
+    <div class="bottom-bar">
+      <button class="pill-btn ghost" id="btnClear">Clear</button>
+      <button class="pill-btn primary" id="btnExport">Export</button>
+      <button class="pill-btn accent" id="btnRunCheck">Run check</button>
+    </div>
+  </div>
+
+  <div id="loadingOverlay" class="loading-overlay hidden">
+    <div class="loading-container">
+      <div class="loading-spinner"></div>
+      <div class="loading-text">Processing...</div>
+    </div>
+  </div>
+
+  <!-- Save Modal -->
+  <div class="modal hidden" id="saveModal">
+    <div class="modal-card large">
+      <div class="modal-title">Save text</div>
+
+      <div class="save-controls">
+        <input id="saveNameInput" type="text" placeholder="Optional filename (e.g., note1.txt)" />
+        <button id="btnSaveCurrent" class="pill-btn success">Save current</button>
+      </div>
+
+      <div id="savedList" class="saved-list"></div>
+
+      <div class="modal-footer">
+        <button class="pill-btn ghost" id="btnSaveBack">Back</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Setting Modal -->
+  <div class="modal hidden" id="settingModal">
+    <div class="modal-card">
+      <div class="modal-title">Settings</div>
+
+      <label class="check-row">
+        <input type="checkbox" id="optAutoCorrect">
+        <span>Enable auto-correction</span>
+      </label>
+
+      <label class="check-row">
+        <input type="checkbox" id="optShowRanking" checked>
+        <span>Show candidate ranking</span>
+      </label>
+
+      <label class="check-row">
+        <input type="checkbox" id="optShowConfidence">
+        <span>Show confidence % (softmax / LM)</span>
+      </label>
+
+      <label class="check-row">
+        <input type="checkbox" id="optRealWordCheck">
+        <span>Enable real-word error detection</span>
+      </label>
+
+      <!-- NEW -->
+      <label class="check-row">
+        <input type="checkbox" id="optShowVocabPanel">
+        <span>Show Vocabulary Panel</span>
+      </label>
+
+      <div class="modal-footer split">
+        <button class="pill-btn success" id="btnSettingSave">Save</button>
+        <button class="pill-btn ghost" id="btnSettingCancel">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='app.js') }}?v=20260101_vocab2"></script>
+</body>
+</html>

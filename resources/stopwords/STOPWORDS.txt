@@ -1,0 +1,262 @@
+# ------------------------------
+# STANDARD ENGLISH STOPWORDS
+# ------------------------------
+a
+about
+above
+after
+again
+against
+all
+am
+an
+and
+any
+are
+as
+at
+be
+because
+been
+before
+being
+below
+between
+both
+but
+by
+could
+did
+do
+does
+doing
+down        # <--- CAREFUL: removed from hard stop because DOWN is sentiment. DO NOT include.
+during
+each
+few
+for
+from
+further
+had
+has
+have
+having
+he
+her
+here
+hers
+herself
+him
+himself
+his
+how
+i
+if
+in
+into
+is
+it
+its
+itself
+just
+me
+more
+most
+my
+myself
+no
+nor
+not        # <--- CAREFUL: KEEP this for sentiment. Removing it breaks negation.
+now
+of
+off
+on
+once
+only
+or
+other
+our
+ours
+ourselves
+out
+over
+own
+s
+same
+she
+should
+so
+some
+such
+than
+that
+the
+their
+theirs
+them
+themselves
+then
+there
+these
+they
+this
+those
+through
+to
+too
+under
+until
+up          # <--- DO NOT REMOVE — sentiment ("market up", "stock up")
+very
+was
+we
+were
+what
+when
+where
+which
+while
+who
+whom
+why
+with
+you
+your
+yours
+yourself
+yourselves
+
+# ------------------------------
+# TWITTER + SOCIAL MEDIA NOISE
+# ------------------------------
+rt
+https
+http
+co
+amp
+t             # strong noise token
+s
+m
+q
+k
+p
+b
+c
+e
+g
+w
+x
+d
+r
+u
+user           # source artifact
+via
+im
+ive
+dont
+cant
+didnt
+doesnt
+youre
+youll
+yall
+id
+ill
+
+# ------------------------------
+# FINANCIAL DATASET BOILERPLATE (SAFE TO REMOVE)
+# ------------------------------
+marketscreener
+breaking
+news
+update
+results
+report
+reports
+day
+today
+tomorrow
+yesterday
+week
+weeks
+time
+market       # optional: KEEP if used as feature. REMOVE only if too frequent.
+business
+company
+companies
+shares        # optional: remove if noisy
+share
+sector
+industry
+analyst
+analysts
+coverage
+initiated
+maintained
+reiterated
+neutral       # optional: rating word — keep if your model uses rating classification
+perform
+performance
+rating
+estimate
+estimates
+target         # optional — often used in price target sentiment, so KEEP unless needed
+targets
+price          # same as above — usually KEEP
+call           # optional: analyst call vs trading call; decide based on model
+calls
+chart
+charts
+
+# ------------------------------
+# FINANCE-SAFE CUSTOM STOPWORDS (based on top 200 frequency)
+# ------------------------------
+here
+there
+still
+back
+first
+people
+why
+some
+most
+know
+think
+see
+look
+looking
+nice
+great
+good
+make
+take
+done
+doing
+over
+under
+close
+coming
+going
+said
+says
+big       # optional: big news/big gains — usually KEEP
+top       # sometimes signal (“top gainer”), so usually KEEP
+high      # usually sentiment; KEEP
+higher    # KEEP
+long      # KEEP (trading)
+short     # KEEP (trading)
+buying    # KEEP
+sell      # KEEP
+selling   # KEEP
+up        # KEEP
+down      # KEEP
+bullish   # KEEP
+bearish   # KEEP
+
+# ------------------------------
+# DO NOT INCLUDE THESE (signal words!)
+# ------------------------------
+# up, down, buy, sell, bullish, bearish, strong, weak, gain, loss, earnings,
+# revenue, profit, forecast, guidance, beat, miss, growth, crypto, bitcoin,
+# volatility, drop, fall, rise, upgrade, downgrade, raise, cut, boosted,
+# slump, rally, crash

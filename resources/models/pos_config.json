@@ -1,0 +1,17 @@
+{
+  "corpus_dir": "../resources/corpus",
+  "corpus_csv": "../resources/corpus/financial/all-data.csv",
+  "text_col": "text",
+  "csv_no_header": true,
+  "max_sents": 300000,
+  "top_pos_per_word": 2,
+  "min_pos_count": 2,
+  "random_state": 42,
+  "sentences_used": 13846,
+  "unique_words": 6084,
+  "timing_seconds": {
+    "preprocess_sentences": 0.545914,
+    "pos_tagging": 4.46023
+  },
+  "notes": "POS lexicon pack for runtime POS-aware candidate filtering/ranking."
+}

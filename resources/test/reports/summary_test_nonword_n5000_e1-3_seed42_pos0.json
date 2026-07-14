@@ -1,0 +1,144 @@
+{
+  "test_file": "C:\\BaiduCloud\\BaiduSyncdisk\\document\\semester2\\NLP\\assignment\\work\\A1_Spelling_Check\\resources\\test\\test_nonword_n5000_e1-3_seed42.jsonl",
+  "pos_on": false,
+  "detection": {
+    "tp": 10073,
+    "fp": 27,
+    "fn": 11,
+    "precision": 0.9973267326732673,
+    "recall": 0.9989091630305434,
+    "f1": 0.9981173206500198
+  },
+  "correction": {
+    "matched": 10073,
+    "top1": 0.7360270028789834,
+    "top3": 0.9062841258810682,
+    "top5": 0.9466891690658196,
+    "mrr": 0.8236424104040504
+  },
+  "latency_sec": {
+    "mean": 0.044181980000296606,
+    "p50": 0.03956659999676049,
+    "p95": 0.0945818000473082,
+    "n": 5000
+  },
+  "gt_errors": 10084,
+  "diagnostics": {
+    "fp_words_top": [
+      [
+        "kauko",
+        3
+      ],
+      [
+        "utenos",
+        2
+      ],
+      [
+        "yr",
+        2
+      ],
+      [
+        "tauras",
+        2
+      ],
+      [
+        "tauro",
+        2
+      ],
+      [
+        "kaivo",
+        1
+      ],
+      [
+        "oja",
+        1
+      ],
+      [
+        "beltton",
+        1
+      ],
+      [
+        "vv",
+        1
+      ],
+      [
+        "royce",
+        1
+      ],
+      [
+        "bss",
+        1
+      ],
+      [
+        "arranger",
+        1
+      ],
+      [
+        "molub",
+        1
+      ],
+      [
+        "mails",
+        1
+      ],
+      [
+        "xfn",
+        1
+      ],
+      [
+        "tyred",
+        1
+      ],
+      [
+        "veli",
+        1
+      ],
+      [
+        "ekono",
+        1
+      ],
+      [
+        "qcs",
+        1
+      ],
+      [
+        "dcs",
+        1
+      ],
+      [
+        "kd",
+        1
+      ]
+    ],
+    "fn_words_top": [
+      [
+        "tem",
+        4
+      ],
+      [
+        "lan",
+        2
+      ],
+      [
+        "fia",
+        1
+      ],
+      [
+        "igzn",
+        1
+      ],
+      [
+        "omrn",
+        1
+      ],
+      [
+        "kalnapsilis",
+        1
+      ],
+      [
+        "kymene",
+        1
+      ]
+    ]
+  }
+}

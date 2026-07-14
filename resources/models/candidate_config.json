@@ -1,0 +1,12 @@
+{
+  "mode": "both",
+  "max_word_len": 50,
+  "dict_dir": "../resources/models",
+  "vocab_size": 27670,
+  "outputs": [
+    "candidate_buckets.pkl",
+    "candidate_config.json",
+    "candidate_vocab_snapshot.txt"
+  ],
+  "notes": "Candidate Pack for MED candidate generation acceleration (A1)."
+}
